@@ -34,6 +34,7 @@ class ParticleEmitter extends Mesh {
 		//this.particleBuffer_ = new THREE.BufferGeometry();
 		//this.indexBuffer_ = [];
 
+		this.isParticleEmitter = true;
 		this.particleBuffer_ = new InstancedBufferGeometry();
 		this.interleavedBuffer = new InterleavedBuffer();
 

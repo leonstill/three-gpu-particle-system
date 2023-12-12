@@ -95,6 +95,11 @@ class ParticleSystem  {
 
 	}
 
+	deleteEmitter(emitter) {
+		let i = this.drawables_.indexOf(emitter);
+		if(i>=0) this.drawables_.splice(i,1);
+	}
+
 	createTrail ( maxParticles, parameters, opt_texture, opt_perParticleParamSetter, opt_clock ) {
 
 		var trail = new Trail( this, maxParticles, parameters, opt_texture, opt_perParticleParamSetter,	opt_clock );
